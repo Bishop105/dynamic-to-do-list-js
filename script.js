@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const taskText = taskInput.value.trim();
 
         // Alert user if task input is empty
-        if (taskText === '') {
+        if (taskText === "") {
             alert('Please enter a task.');
             return;
         }
@@ -40,10 +40,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Event listener for clicking "Add Task" button
-    addButton.addEventListener("Enter", addTask);
+    addButton.addEventListener('keypress', addTask);
 
     // Event listener to add task when pressing Enter key inside input
-    taskInput.addEventListener('keypress', (event) => {
+    taskInput.addEventListener("Enter",  (event) => {
         if (event.key === 'Enter') {
             addTask();
         }
