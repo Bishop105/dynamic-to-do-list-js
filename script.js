@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Create remove button for this task
         const removeBtn = document.createElement('button');
-        removeBtn.textContent = 'Remove';
+        removeBtn.textContent = "Remove";
         removeBtn.className = 'remove-btn';
 
         // Setup click event to remove the task from the list
@@ -36,11 +36,11 @@ document.addEventListener('DOMContentLoaded', () => {
         taskList.appendChild(li);
 
         // Clear the input field after adding the task
-        taskInput.value = '';
+        taskInput.value = "";
     }
 
     // Event listener for clicking "Add Task" button
-    addButton.addEventListener('click', addTask);
+    addButton.addEventListener("Enter", addTask);
 
     // Event listener to add task when pressing Enter key inside input
     taskInput.addEventListener('keypress', (event) => {
